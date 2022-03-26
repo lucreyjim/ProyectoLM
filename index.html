@@ -160,51 +160,147 @@
 				</p>
 
 				<a id="australia"></a>
-                <h3>
-                    <a href="./articles/noticia2_2.html" class="textoarticulo2">Safaris en Australia</a>
-                </h3>
-                <p>Australia es un espectáculo para amantes de naturaleza. Si el país cuenta con más de 500 parques
-                    nacionales dispone de una multitud de paisajes donde el safari toma toda su dimensión.<br><a
-                        href="./articles/noticia2_2.html" style="color: white;">Leer más...</a><br>
-                    <a href="./articles/noticia2_2.html">
-                        <picture class="image main">
-                            <source media="(max-width: 749px)" srcset="./images/australia400w.jpg">
-                            <source media="(min-width: 750px)" srcset="./images/australia650w.jpg">
-                            <img src="./images/australia650w.jpg" alt="Safari Australia">
-                        </picture>
-                    </a>
-                </p>
+				<h3>
+					<a href="./articles/noticia2_2.html" class="textoarticulo2">Safaris en Australia</a>
+				</h3>
+				<p>Australia es un espectáculo para amantes de naturaleza. Si el país cuenta con más de 500 parques
+					nacionales dispone de una multitud de paisajes donde el safari toma toda su dimensión.<br><a
+						href="./articles/noticia2_2.html" style="color: white;">Leer más...</a><br>
+					<a href="./articles/noticia2_2.html">
+						<picture class="image main">
+							<source media="(max-width: 749px)" srcset="./images/australia400w.jpg">
+							<source media="(min-width: 750px)" srcset="./images/australia650w.jpg">
+							<img src="./images/australia650w.jpg" alt="Safari Australia">
+						</picture>
+					</a>
+				</p>
 			</article>
 
 			<!-- Contact -->
 			<article id="contact">
-				<h2 class="major">Contact</h2>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field half">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
+				<h2 class="major">Formulario</h2>
+				<form action="mailto:luciarj03@gmail.com" method="post" name="formmulario de la página" target="_self">
+
+					<fieldset>
+						<legend>Datos personales</legend><br>
+						<div class="fields">
+
+							<div class="field half">
+								<label for="nombre">Ingrese su nombre:</label>
+								<input type="text" name="nombre" id="nombre" autocomplete="additional-name" required
+									autofocus><br>
+							</div>
+							<div class="field half">
+								<label for="apellidos">Ingrese sus apellidos:</label>
+								<input type="text" name="apellidos" id="apellidos" required><br>
+							</div>
+							<div class="field half">
+								<label for="num">Código postal:</label>
+								<input type="number" name="num" id="num" value="00000" max="99999" min="00000"><br><br>
+
+							</div>
+							<div class="field half">
+								<label for="fecha_nac">Fecha de nacimiento:</label>
+								<input type="date" name="fecha_nac" id="fecha_nac" required><br><br>
+
+							</div>
+							<div class="field half">
+								<label for="telefono">Ingrese un teléfono de contacto:</label>
+								<input type="tel" name="telefono" id="telefono"><br>
+
+							</div>
+							<div class="field half">
+								<label for="correo">Indique su correo:</label>
+								<input type="email" name="correo" id="correo" size="50" required><br>
+
+							</div>
+							<div class="field half">
+								<label for="clave">Contraseña:</label>
+								<input type="password" name="clave" id="clave"><br>
+
+							</div>
+							<div class="field half">
+								<label for="adjunto">Adjunte fichero son su DNI:</label> <br>
+								<input type="file" name="adjunto" id="adjunto" accept=".doc, .pdf">
+
+							</div>
 						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
+					</fieldset>
+					<br><br>
+					<fieldset>
+						<legend>Ayúdanos dando tu opinión</legend>
+
+						<div class="fields">
+
+							<div class="actions">
+								<p>Indique la sección que más le haya gustado:</p>
+								<input type="radio" name="seccionfavorita" id="top" value="top">
+								<label for="top">Top 2021</label> <br>
+								<input type="radio" name="seccionfavorita" id="safaris" value="safaris">
+								<label for="safaris">Safaris</label> <br>
+								<input type="radio" name="seccionfavorita" id="7_maravillas" value="7_maravillas">
+								<label for="7_maravillas">7 maravillas</label><br>
+							</div>
+
+							<div class="actions">
+								<p>Indique la sección que crea que se puede mejorar:</p>
+								<input type="radio" name="seccionfavorita" id="Top" value="Top">
+								<label for="Top">Top 2021</label> <br>
+								<input type="radio" name="seccionfavorita" id="Safaris" value="Safaris">
+								<label for="Safaris">Safaris</label> <br>
+								<input type="radio" name="seccionfavorita" id="7_Maravillas" value="7_Maravillas">
+								<label for="7_Maravillas">7 maravillas</label><br><br>
+
+							</div>
+
+							<div class="actions">
+								<label for="mensaje">Opinión personal de nuestra página:</label><br>
+								<textarea name="mensaje" id="mensaje" rows="4" cols="50"></textarea><br>
+							</div>
+
+							<div class="actions">
+								<label for="menu">Seleccione su continente favorito:<br /></label>
+								<select name="menu" id="menu" size="6" multiple>
+									<option value="1">África</option>
+									<option value="2">América</option>
+									<option value="3">Antártida</option>
+									<option value="4">Asia</option>
+									<option value="5">Europa</option>
+									<option value="6">Oceanía</option>
+								</select><br><br>
+							</div>
+
+							<div class="actions">
+								<p>Hagan click sobre las secciones que le gustaría incorporar a la página</p>
+								<input type="checkbox" name="lunademiel" id="lunademiel" value="lunademiel">
+								<label for="lunademiel">Lunas de miel</label> <br>
+								<input type="checkbox" name="Festivales" id="Festivales" value="Festivales">
+								<label for="Festivales">Festivales</label> <br>
+								<input type="checkbox" name="Culturas" id="Culturas" value="Culturas">
+								<label for="Culturas">Culturas</label><br>
+								<input type="checkbox" name="patrimonios" id="patrimonios" value="patrimonios">
+								<label for="patrimonios">Mayores patrimonios de la humanidad</label> <br>
+							</div>
+
+							<div class="actions">
+								<label for="cita">Si desea realizar un viaje, selecciona fecha y hora para la cita con
+									nuestro
+									gerente:</label>
+								<input type="datetime-local" name="cita" id="cita"><br>
+							</div>
+
 						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="4"></textarea>
-						</div>
-					</div>
+
+					</fieldset>
+<br><br>
+
+
 					<ul class="actions">
-						<li><input type="submit" value="Send Message" class="primary" /></li>
-						<li><input type="reset" value="Reset" /></li>
+						<li><input type="submit" value="Enviar" class="primary" /></li>
+						<li><input type="reset" value="Restablecer valores" /></li>
 					</ul>
 				</form>
-				<ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
+
 			</article>
 
 			<!-- Elements -->
@@ -405,7 +501,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<section>
 					<h3 class="major">Form</h3>
-					<form method="post" action="#">
+					<form method="post" action="mailto:luciarj03@gmail.com" name="formmulario de la página"
+						target="_self">
 						<div class="fields">
 							<div class="field half">
 								<label for="demo-name">Name</label>
@@ -461,7 +558,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			<br><br><br>
+			<p>Alumno: Lucía Reyes Jiménez<br>Asignatura: Lenguajes de marcas<br>Curso: 2021-2022</p>
+			<ul class="icons">
+				<li><a href="https://twitter.com/luciaaareyes" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://www.facebook.com/lucia.reyesjimenez.37/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/luciaareeyes_/?hl=es" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+			</ul>
 		</footer>
 
 	</div>
