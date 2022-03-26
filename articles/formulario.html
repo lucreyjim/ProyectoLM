@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucía Reyes Jiménez">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Formulario viajes">
+    <meta name="keywords" content="viajes, viaje, familia, amigos, vacaciones, formulario">
+    <title>Formulario</title>
+    <link rel="icon" href="../icons/formulario-de-contacto.png" type="image/png" sizes="16x16" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main id="formulario">
+
+        
+        <form action="mailto:luciarj03@gmail.com" method="post" name="formmulario de la página" target="_self">
+
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Ingrese su nombre:</label>
+                <input type="text" name="nombre" id="nombre" autocomplete="additional-name" required autofocus><br><br>
+
+                <label for="apellidos">Ingrese sus apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" required><br><br>
+
+                <label for="num">Código postal:</label>
+                <input type="number" name="num" id="num" value="00000" max="99999" min="00000">
+
+                <label for="fecha_nac">Fecha de nacimiento:</label>
+                <input type="date" name="fecha_nac" id="fecha_nac" required><br><br>
+
+                <label for="telefono">Ingrese un teléfono de contacto:</label>
+                <input type="tel" name="telefono" id="telefono"><br><br>
+
+                <label for="correo">Indique su correo:</label>
+                <input type="email" name="correo" id="correo" size="50" required><br><br>
+
+                <label for="clave">Contraseña:</label>
+                <input type="password" name="clave" id="clave"><br><br>
+
+                <label for="adjunto">Adjunte fichero son su DNI:</label> <br>
+                <input type="file" name="adjunto" id="adjunto" accept=".doc, .pdf">
+
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Ayúdanos dando tu opinión</legend>
+                <p>Indique la sección que más le haya gustado:</p>
+                <input type="radio" name="seccionfavorita" id="top" value="top">
+                <label for="top">Top 2021</label> <br>
+                <input type="radio" name="seccionfavorita" id="safaris" value="safaris">
+                <label for="safaris">Safaris</label> <br>
+                <input type="radio" name="seccionfavorita" id="7_maravillas" value="7_maravillas">
+                <label for="7_maravillas">7 maravillas</label><br>
+
+                <p>Indique la sección que crea que se puede mejorar:</p>
+                <input type="radio" name="seccionfavorita" id="Top" value="Top">
+                <label for="Top">Top 2021</label> <br>
+                <input type="radio" name="seccionfavorita" id="Safaris" value="Safaris">
+                <label for="Safaris">Safaris</label> <br>
+                <input type="radio" name="seccionfavorita" id="7_Maravillas" value="7_Maravillas">
+                <label for="7_Maravillas">7 maravillas</label><br><br>
+
+                <label for="mensaje">Opinión personal de nuestra página:</label><br>
+                <textarea name="mensaje" id="mensaje" rows="8" cols="50"></textarea><br>
+
+                <label for="menu">Seleccione su continente favorito:<br /></label>
+                <select name="menu" id="menu" size="6" multiple>
+                    <option value="1">África</option>
+                    <option value="2">América</option>
+                    <option value="3">Antártida</option>
+                    <option value="4">Asia</option>
+                    <option value="5">Europa</option>
+                    <option value="6">Oceanía</option>
+                </select><br><br>
+
+                <p>Hagan click sobre las secciones que le gustaría incorporar a la página</p>
+                <input type="checkbox" name="lunademiel" id="lunademiel" value="lunademiel">
+                <label for="lunademiel">Lunas de miel</label> <br>
+                <input type="checkbox" name="Festivales" id="Festivales" value="Festivales">
+                <label for="Festivales">Festivales</label> <br>
+                <input type="checkbox" name="Culturas" id="Culturas" value="Culturas">
+                <label for="Culturas">Culturas</label><br>
+                <input type="checkbox" name="patrimonios" id="patrimonios" value="patrimonios">
+                <label for="patrimonios">Mayores patrimonios de la humanidad</label> <br>
+
+                <label for="cita">Si desea realizar un viaje, selecciona fecha y hora para la cita con nuestro
+                    gerente:</label>
+                <input type="datetime-local" name="cita" id="cita">
+            </fieldset><br>
+
+            <button type="submit" value="enviar" name="enviar" id="enviar">Enviar valores</button>
+            <button type="reset" value="reset" name="reset" id="reset">Restablecer valores</button>
+        </form>
+        <br>
+        <a href="../index.html#formulario">
+            <picture>
+                <source media="(max-width: 799px)" srcset="../buttons/volver25w.png">
+                <source media="(min-width: 800px)" srcset="../buttons/volver50w.png">
+                <img src="../buttons/volver50w.png" alt="Volver">
+            </picture>
+        </a><br>
+        <a href="../index.html#formulario">Volver a la página principal</a>
+
+    </main>
+
+    <footer>
+        <p>Alumno: Lucía Reyes Jiménez<br>Asignatura: Lenguajes de marcas<br>Curso: 2021-2022<br><br>Nuestras redes
+            sociales:</p>
+        <p>
+            <a href="https://www.facebook.com/">
+                <img src="../images/facebook.png" width="30" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/?hl=es">
+                <img src="../images/instagram.png" width="40" alt="instagram">
+            </a>
+            <a href="https://twitter.com/?lang=es">
+                <img src="../images/twitter.png" width="30" alt="twitter">
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
